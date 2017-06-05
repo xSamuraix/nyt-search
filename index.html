@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New York</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+<body>
+    <div class="container">
+    <header>
+        <h1> New York Times</h1>
+    </header>
+        <form>
+          <div class="form-group">
+          <label for="searchTerm">Search Term</label>
+            <input type="text" class="form-control" id="searchTerm" placeholder="search"><br>
+
+            <label for="numbersR">Number of Records to Retrieve</label>
+            <input type="number" class="form-control" id="numbersR" placeholder="numbers" min="1" max="25"><br>
+          
+          <label for="year">Start Year</label>
+            <input type="text" class="form-control" id="year" placeholder="year"><br>
+
+            <label for="endingYear">End Year</label>
+            <input type="text" class="form-control" id="year" placeholder="Year"><br>
+
+          </div>
+          
+          
+          <button type="submit" id="search" class="btn btn-default">Search</button>
+            <div class="results"></div>    
+
+            <button type="clear" id="clear" class="btn btn-default">Clear Results</button>
+            
+        </form>
+    </div>
+    <div id="showResults"></div>
+<script type="text/javascript">
+    $('button').on("click", "#search",function(){
+        //populate function div with all the searches    
+    });
+    $('button').on("click", "#clear",function(){
+        //clear the inside the form
+        form.reset();
+        //$('form').empty();
+
+    });
+</script>
+</body>
+
+
+</html>
